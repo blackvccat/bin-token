@@ -9,6 +9,7 @@ module.exports = {
   networks: {
     // Sepolia 测试网配置
     sepolia: {
+      
       url: SEPOLIA_RPC_URL || "",
       accounts: PRIVATE_KEY ? [PRIVATE_KEY] : [],
     },
@@ -21,4 +22,8 @@ module.exports = {
     // v2 API 配置（新写法，只需要一个 key）
     apiKey: ETHERSCAN_API_KEY || "",
   },
+  sourcify: {
+  enabled: true,
+}
+
 };
